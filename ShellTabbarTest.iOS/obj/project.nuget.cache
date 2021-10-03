@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "yaBNpLVr6JR75NpfCIP6k7/qB9xJ6lCUsWCod6JYB7f7oIwWFI65Po6CjdP3v1NT+iRVRUb9H6z2jLZLqq3gQA==",
+  "success": true,
+  "projectFilePath": "/Users/michaelknoch/Projects/ShellTabbarTest/ShellTabbarTest.iOS/ShellTabbarTest.iOS.csproj",
+  "expectedPackageFiles": [
+    "/Users/michaelknoch/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/michaelknoch/.nuget/packages/xamarin.essentials/1.6.1/xamarin.essentials.1.6.1.nupkg.sha512",
+    "/Users/michaelknoch/.nuget/packages/xamarin.forms/5.0.0.2012/xamarin.forms.5.0.0.2012.nupkg.sha512"
+  ],
+  "logs": []
+}

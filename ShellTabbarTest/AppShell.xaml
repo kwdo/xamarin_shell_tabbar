@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Shell xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:local="clr-namespace:ShellTabbarTest.Views"
+       Title="ShellTabbarTest"
+       x:Class="ShellTabbarTest.AppShell">
+
+    <!--
+        The overall app visual hierarchy is defined here, along with navigation.
+    
+        https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/
+    -->
+
+    <Shell.Resources>
+        <ResourceDictionary>
+            <Style x:Key="BaseStyle" TargetType="Element">
+                <Setter Property="Shell.TabBarTitleColor" Value="Orange"/>
+                <Setter Property="Shell.TabBarBackgroundColor" Value="White" />
+                <Setter Property="Shell.NavBarHasShadow" Value="True" />
+                <Setter Property="Shell.BackgroundColor" Value="White" />
+                <Setter Property="Shell.ForegroundColor" Value="Red" />
+                <Setter Property="Shell.TitleColor" Value="Red" />
+            </Style>
+
+
+
+        </ResourceDictionary>
+    </Shell.Resources>
+
+
+
+    <TabBar Style="{StaticResource BaseStyle}">
+		<Tab Icon="icon_about.png" Title="About">
+			<ShellContent Title="About" Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" Style="{StaticResource BaseStyle}" />
+            <ShellContent Title="Browse" ContentTemplate="{DataTemplate local:ItemsPage}" Style="{StaticResource BaseStyle}" />
+		</Tab>
+		  <Tab Title="LoginPage" Icon="icon_feed.png" >
+            <ShellContent Title="LoginPage" Icon="icon_feed.png" Route="LoginPage" ContentTemplate="{DataTemplate local:LoginPage}"  />
+        </Tab>
+	</TabBar> 
+
+
+
+
+</Shell>
